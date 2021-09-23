@@ -1,0 +1,17 @@
+.header {
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height:6.3rem;
+    justify-content: center;
+    
+    &__logo {
+        text-align: center;
+    }
+    &__logo img {
+        height:47%;
+        width: 43%;
+    }
+}

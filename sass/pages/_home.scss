@@ -1,0 +1,106 @@
+.home {
+    width: 100%;
+    background:$color-lightgrey;
+}
+h2 {
+    font-size:2.5rem;
+    font-weight:bold;
+    line-height: 2.4rem;
+    font-family: "Roboto", sans-serif;
+}
+.localisation {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 5rem;
+    background:$color-grey;
+    justify-content: center;
+    box-shadow: inset 0em 0.2rem rgba($color-darkgrey, .2);
+    &__icon {
+        margin-left: 7.5rem;
+    }
+}
+.searchSet {
+        background:$color-grey;
+        border: none;
+        display: flex;
+        margin-left: 1.5rem;
+        font-size: 1.8rem;
+}
+.info {
+    background:$color-lightgrey;
+    margin-top: 0rem;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    height:26.6rem;
+}
+.info p {
+    color: lighten($color-darkgrey, 25%);
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+.operation {
+    height: 38rem;
+    background:white;
+    padding-bottom: 1rem;
+    &__header {
+        margin-left: 2rem;
+        padding-top: 2rem;
+    }
+    &__flow {
+        padding:0.1rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        display:flex;
+        flex-direction: column;
+    } 
+}
+.restaurant {
+    height: 122.6rem;
+    color:black;
+    background: $color-lightgrey;
+    display: flex;
+    padding:2rem;
+    flex-direction: column;
+    &__header {
+        margin-left: 0rem;
+    }
+}
+.card {
+    margin: 0rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    height: 25.2rem;
+    margin-bottom: 2rem;
+    &__text {
+        line-height: 1.0rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    &__text h3 p {
+        font-size: 2.8rem;
+    }
+}
+.card img {
+    width: 100%;
+    max-height: 17.4rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+}
+
+/* ------------- Responsive------------- */
+@media screen and ( max-width: 1440px) {
+    .loupe {
+        display:none;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 601px) {
+
+}
+@media screen and (max-width: 600px) and (min-width: 370px) {
+
+}
