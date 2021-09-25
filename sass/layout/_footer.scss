@@ -4,6 +4,7 @@
     padding: 0.5rem;
     text-align: center;
     max-width: 100%;
+    padding-bottom: 2rem;
     
     &__links {
         text-align: left;
@@ -13,6 +14,8 @@
         filter: invert(1);
         max-width: 15rem;
         font-size: 1.5rem;
+        margin-top: 2rem;
+        
     }
     &__logo img {
         width: 9rem;
