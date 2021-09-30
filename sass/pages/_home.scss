@@ -41,20 +41,15 @@ h2 {
     line-height: 2rem;
 }
 .operation {
-    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     background:white;
-    padding-bottom: 1rem;
+    padding-bottom: 6rem;
     &__header {
         margin-left: 2rem;
         padding-top: 2rem;
     }
-    &__flow {
-        padding:0.1rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        display:flex;
-        flex-direction: column;
-    } 
 }
 .restaurant {
     height: 122.6rem;
