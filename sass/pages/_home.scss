@@ -62,6 +62,9 @@ h2 {
         margin-left: 0rem;
     }
 }
+%heartanimated {
+    transition: 0.5s 0s ease;
+}
 .card {
     margin: 0rem;
     background-color: white;
@@ -70,13 +73,40 @@ h2 {
     width: 100%;
     height: 25.2rem;
     margin-bottom: 2rem;
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        justify-content:space-between;
+    }
     &__text {
         line-height: 1.0rem;
-        margin-top: 1rem;
+        margin-top: 0rem;
         margin-left: 1rem;
     }
     &__text h3 p {
         font-size: 2.8rem;
+    }
+    &__heart {
+        margin-right: 3rem;
+        color: lighten($color-darkgrey, 25%);
+        position: absolute;
+        right: 3rem;
+        @extend %heartanimated;
+    }
+    &__hearthover {
+        margin-right: 3rem;
+        position: absolute;
+        right: 3rem;
+        opacity: 0;
+        &:hover { 
+            @include linearGradient;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+
+            @extend %heartanimated;
+        }
     }
 }
 .card img {
@@ -86,7 +116,16 @@ h2 {
     object-fit: cover;
     border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
-
+.card:hover {
+    cursor: pointer;
+}
+.card__heart:hover {
+    opacity: 0;
+    @extend %heartanimated;
+}
+.card__hearthover:hover {
+    opacity: 1;
+}
 /* ------------- Responsive------------- */
 @media screen and ( max-width: 1440px) {
     .loupe {

@@ -1,0 +1,6 @@
+@mixin linearGradient {
+    background: $color-fade;
+  }
+@mixin heartanimated {
+    transition: 0.5s 0s ease;
+}
