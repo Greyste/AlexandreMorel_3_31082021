@@ -103,6 +103,7 @@ h2 {
         &:hover { 
             @include linearGradient;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             -webkit-background-clip: text;
 
             @extend %heartanimated;
@@ -125,6 +126,19 @@ h2 {
 }
 .card__hearthover:hover {
     opacity: 1;
+}
+.card__new {
+    position: relative;
+}
+.newflag {
+    position:absolute;
+    top:1rem;
+    right: 1rem;
+    background:$color-tertiary;
+    color:darken($color-tertiary, 40%);
+    padding:0.3rem 1rem;
+    font-weight:bold;
+    text-decoration: none;
 }
 /* ------------- Responsive------------- */
 @media screen and ( max-width: 1440px) {

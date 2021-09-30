@@ -6,8 +6,8 @@ $color-darkgrey:rgb(53, 53, 53);
 $color-lightgrey:rgb(246, 246, 246);
 
 $color-fade: linear-gradient($color-primary, $color-secondary);
-
+$color-fade2: linear-gradient($color-secondary, $color-primary);
 
 $logo-title-font: "Shrikhand", cursive;
 $text-font: "Roboto", sans-serif;
-
+$bold: bold;
