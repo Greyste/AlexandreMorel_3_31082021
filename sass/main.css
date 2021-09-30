@@ -233,11 +233,7 @@ footer ul {
   list-style: none;
 }
 
-/**
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
-**/
+/*-------------- loading spinner ----------*/
 .home {
   width: 100%;
   background: #f6f6f6;
