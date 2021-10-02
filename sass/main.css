@@ -233,7 +233,7 @@ footer ul {
   list-style: none;
 }
 
-/*-------------- loading spinner ----------*/
+/*loading spinner*/
 :root {
   --effect: hover 3s linear infinite;
 }
@@ -393,6 +393,31 @@ footer ul {
           animation: var(--effect) 0.75s;
 }
 
+/** fadeIn animation **/
+:root {
+  --fadeeffect: SlideUp;
+}
+
+.fade1 {
+  -webkit-animation: var(--fadeeffect) 2s;
+          animation: var(--fadeeffect) 2s;
+}
+
+.fade2 {
+  -webkit-animation: var(--fadeeffect) 2.5s;
+          animation: var(--fadeeffect) 2.5s;
+}
+
+.fade3 {
+  -webkit-animation: var(--fadeeffect) 3s;
+          animation: var(--fadeeffect) 3s;
+}
+
+.fade4 {
+  -webkit-animation: var(--fadeeffect) 3.5s;
+          animation: var(--fadeeffect) 3.5s;
+}
+
 /**loader**/
 @-webkit-keyframes fadeIn {
   from {
@@ -456,6 +481,32 @@ footer ul {
   100% {
     opacity: 0;
     z-index: -10;
+  }
+}
+
+@-webkit-keyframes SlideUp {
+  from {
+    margin-top: 10%;
+    height: 300%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes SlideUp {
+  from {
+    margin-top: 10%;
+    height: 300%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    height: 100%;
+    opacity: 1;
   }
 }
 

@@ -1,5 +1,5 @@
 
-/*-------------- loading spinner ----------*/
+/*loading spinner*/
 :root {
     --effect: hover 3s linear infinite;
   }
@@ -64,4 +64,19 @@
     animation: var(--effect) .75s;
   }
 
-
+/** fadeIn animation **/
+:root {
+    --fadeeffect: SlideUp;
+  }
+.fade1 {
+    animation: var(--fadeeffect) 2s;
+}
+.fade2 {
+    animation: var(--fadeeffect) 2.5s;
+}
+.fade3 {
+    animation: var(--fadeeffect) 3s;
+}
+.fade4 {
+    animation: var(--fadeeffect) 3.5s;
+}
