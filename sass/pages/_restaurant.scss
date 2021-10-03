@@ -62,21 +62,30 @@
 .cardMenu {
     display: flex;
     justify-content:space-between;
-    height: 7rem;
+   /** height: 7rem;**/
     margin-bottom: 1rem;
     background-color: white;
     border-radius: 1.5rem;
     cursor: pointer;
     width: 100%;
+    box-shadow: 0 0.3rem 0.7rem 0 grey;
     &__text {
+        padding: 0.1rem;
         line-height: 0.8rem;
         padding-top: 0.5rem;
         margin-left: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &__price {
         margin-right: 2rem;
         margin-top: 2.4rem;
         font-weight: bold;
+        display: flex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 .starter {
@@ -87,4 +96,29 @@
 }
 .dessert {
     width: 100%;
+}
+.cardMenu__text:hover h3 p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* ------------- Responsive------------- */
+@media screen and (min-width: 601px) {
+    .photorestaurants {
+        height: 50rem;
+    }
+    .options {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+    .cardMenu {
+        width:30%;
+    }
+    .menu {
+        height: 65rem;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 370px) {
+
 }

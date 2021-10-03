@@ -27,9 +27,10 @@
       z-index: -10;
     }
   }
-@keyframes SlideUp {
+/**
+@keyframes slideUp {
     from {
-        margin-top: 10%;
+        margin-top: 0%;
         height: 300%;
         opacity: 0;
     }
@@ -38,4 +39,73 @@
         height: 100%;
         opacity: 1;
     }
+}
+**/
+
+@keyframes slideUp {
+  10% {
+        height: 100%;
+        opacity: 0;
+  }
+/**
+  50% {
+    margin-top: 0%;
+    height: 100%;
+  }
+  **/
+  100% {
+    opacity: 1;
+  }
+}
+
+/**valbox **/
+
+@keyframes valbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+
+  20% {
+    transform: translate(30px, 0);
+  }
+
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+
+@keyframes valbox-container {
+  0% {
+    transform: translate(50px, 0);
+  }
+
+  40% {
+    transform: translate(25px, 0);
+  }
+
+  70% {
+    transform: translate(12px, 0);
+  }
+
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+@keyframes validebtn {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
 }

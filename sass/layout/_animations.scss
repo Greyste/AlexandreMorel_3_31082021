@@ -9,7 +9,7 @@
     }
   }
   .loader {
-    animation: loader 6s;
+    animation: loader 4s;
     animation-delay: 1.5s;
     animation-fill-mode: both;
     position: fixed;
@@ -66,17 +66,59 @@
 
 /** fadeIn animation **/
 :root {
-    --fadeeffect: SlideUp;
+    --fadeeffect: slideUp;
   }
 .fade1 {
-    animation: var(--fadeeffect) 2s;
-}
-.fade2 {
     animation: var(--fadeeffect) 2.5s;
 }
+.fade2 {
+    animation: var(--fadeeffect) 3.5s;
+}
 .fade3 {
-    animation: var(--fadeeffect) 3s;
+    animation: var(--fadeeffect) 4.5s;
 }
 .fade4 {
-    animation: var(--fadeeffect) 3.5s;
+    animation: var(--fadeeffect) 5.5s;
+
+}
+
+/** ValidationBox **/
+
+.valbox {
+  display: none;
+  width: 30%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.btn-circle {
+  font-size: 24px;
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.cardMenu:hover .cardMenu__price {
+  animation: valbox-container ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  min-width: 50px;
+}
+
+.cardMenu:hover .valbox {
+  display: block;
+  flex: 0 0 15%;
+  background: $color-tertiary;
+  max-width: 50px;
+  overflow: hidden;
+  animation: valbox ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+.cardMenu:hover .btn-circle {
+  position: absolute;
+  left: 27%;
+  top: 30%;
+  background: $color-tertiary;
+  animation: validebtn ease 0.5s 1;
 }

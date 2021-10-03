@@ -2,6 +2,12 @@
     width: 100%;
     height: 100%;
     background:$color-lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+#home {
+    max-width: 1440px;
+    margin: auto;
 }
 h2 {
     font-size:2.5rem;
@@ -141,14 +147,44 @@ h2 {
     font-weight:bold;
     text-decoration: none;
 }
-/* ------------- Responsive------------- */
-@media screen and ( max-width: 1440px) {
-    .loupe {
-        display:none;
-    }
+.infop {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height:auto;
 }
-@media screen and (max-width: 992px) and (min-width: 601px) {
+.cardFlex {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* ------------- Responsive------------- */
+@media screen and (min-width: 601px) {
+    .cardFlex {
+        align-content:space-between;
+    }
+    .card {
+        margin:1rem;
+    }
+    .infop {
+        flex-direction:column;
+        background:white;
+        width:45%;
 
+    }
+    .info {
+        width:50%;
+        height: auto;
+        background:white;
+    }
+    .operation {
+        width: 50%;
+        align-items: center;
+    }
+    .restaurant {
+        height :auto;
+        width: 45%;
+    }
 }
 @media screen and (max-width: 600px) and (min-width: 370px) {
 

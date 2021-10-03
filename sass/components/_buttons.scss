@@ -13,6 +13,10 @@
     padding: 1.5rem 3rem;
     transition: 0.2s;
     margin-top: 2rem;
+    &:hover {
+        background: linear-gradient(lighten($color-secondary, 5%),lighten($color-primary, 5%));
+        box-shadow: 0 0.6rem 1.4rem 0 $color-darkgrey;
+    }
 }
 .operation__btn {
     max-width: 30.5rem;
@@ -86,4 +90,8 @@ padding: 1rem 5rem;
 transition: 0.2s;
 margin-top: 4rem;
 margin-bottom: 8rem;
+    &:hover {
+        background: linear-gradient(lighten($color-secondary, 5%),lighten($color-primary, 5%));
+        box-shadow: 0 0.6rem 1.4rem 0 $color-darkgrey;
+    }
 }
