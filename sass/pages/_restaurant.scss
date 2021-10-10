@@ -19,6 +19,7 @@
     flex-direction: column;
     position: relative;
     align-items: center;
+    white-space: nowrap;
     &__header {
         margin-left:2rem;
         margin-top:1.5rem;
@@ -58,11 +59,11 @@
 .options {
     padding-left: 1rem;
     padding-right: 1rem;
+    box-sizing: inherit;
 }
 .cardMenu {
     display: flex;
     justify-content:space-between;
-   /** height: 7rem;**/
     margin-bottom: 1rem;
     background-color: white;
     border-radius: 1.5rem;
@@ -71,21 +72,18 @@
     box-shadow: 0 0.3rem 0.7rem 0 grey;
     &__text {
         padding: 0.1rem;
-        line-height: 0.8rem;
+        line-height: 1.9rem;
         padding-top: 0.5rem;
         margin-left: 1.5rem;
+        width: 75%;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
     }
     &__price {
         margin-right: 2rem;
         margin-top: 2.4rem;
         font-weight: bold;
         display: flex;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
 }
 .starter {
@@ -97,28 +95,47 @@
 .dessert {
     width: 100%;
 }
-.cardMenu__text:hover h3 p {
+.options p {
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.options h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 /* ------------- Responsive------------- */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 750px) {
     .photorestaurants {
         height: 50rem;
     }
     .options {
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         justify-content: space-evenly;
     }
-    .cardMenu {
-        width:30%;
-    }
     .menu {
-        height: 65rem;
+        height: auto;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .starter {
+        width: 30%;
+    }
+    .maincourse {
+        width: 30%;
+    }
+    .dessert {
+        width: 30%;
+    }
+    .cardMenu__text {
+        line-height: 1.9rem;
     }
 }
-@media screen and (max-width: 600px) and (min-width: 370px) {
+@media screen and (max-width: 749px) and (min-width: 370px) {
 
 }

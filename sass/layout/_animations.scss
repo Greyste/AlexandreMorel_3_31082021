@@ -87,11 +87,11 @@
 .valbox {
   display: none;
   width: 30%;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 .btn-circle {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #fff;
   transform: rotate(360deg);
 }
@@ -100,14 +100,14 @@
   animation: valbox-container ease 0.3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  min-width: 50px;
+  min-width: 5rem;
 }
 
 .cardMenu:hover .valbox {
   display: block;
   flex: 0 0 15%;
   background: $color-tertiary;
-  max-width: 50px;
+  max-width: 5rem;
   overflow: hidden;
   animation: valbox ease 0.3s;
   animation-fill-mode: forwards;

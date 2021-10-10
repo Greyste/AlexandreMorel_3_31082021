@@ -5,6 +5,8 @@
     text-align: center;
     max-width: 100%;
     padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
     
     &__links {
         text-align: left;
@@ -36,4 +38,13 @@
     footer ul {
         list-style: none;
     }
-
+@media screen and (min-width: 750px) {
+    .footer {
+        align-items: center;
+    }
+    .footer li {
+        display: inline;
+        margin-left: 2.5rem;
+        margin-right: 3rem;
+    }
+}
