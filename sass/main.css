@@ -1010,6 +1010,9 @@ h2 {
   .operation__btn {
     width: 26.5rem;
   }
+  .header__logo {
+    max-width: 40%;
+  }
 }
 
 .photorestaurants {
